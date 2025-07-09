@@ -1,7 +1,8 @@
 import os
+import re
 
 README_FILE = "README.md"
-SECTION_HEADER = "# 🐍 Python Questions\n"
+SECTION_HEADER = "# 🐍 Python Questions"
 
 def get_question_files():
     return sorted([f for f in os.listdir() if f.startswith("Q") and f.endswith(".py")])
@@ -14,23 +15,28 @@ def update_readme():
     else:
         content = ""
 
-    # Keep only the part before the SECTION_HEADER
-    if SECTION_HEADER in content:
-        pre_content = content.split(SECTION_HEADER)[0]
-    else:
-        pre_content = content + "\n"
-
-    # Build new question list
+    # Regex pattern to capture the Python Questions section
+    pattern = rf"({re.escape(SECTION_HEADER)}\n)(.*?)(\n---)"
     question_files = get_question_files()
-    questions_section = SECTION_HEADER + "\n"
+
+    # Build updated section
+    new_section = SECTION_HEADER + "\n"
     for file in question_files:
-        questions_section += f"- [{file}](./{file})\n"
+        new_section += f"- [{file}](./{file})\n"
+    new_section += "\n---"
 
-    # Combine and write back
+    # Replace the old section with the new one
+    if re.search(pattern, content, flags=re.DOTALL):
+        updated_content = re.sub(pattern, rf"\1{new_section[len(SECTION_HEADER)+1:]}", content, flags=re.DOTALL)
+    else:
+        # If the section doesn't exist, append it at the end
+        updated_content = content.strip() + "\n\n" + new_section
+
+    # Write updated content back
     with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(pre_content.strip() + "\n\n" + questions_section)
+        f.write(updated_content)
 
-    print("✅ README.md partially updated!")
+    print("✅ 'Python Questions' section updated in README.md!")
 
 if __name__ == "__main__":
     update_readme()
