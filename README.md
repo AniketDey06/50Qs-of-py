@@ -1,4 +1,8 @@
-# 🐍 Python Programming Collection - 50 Essential Programs
+<div align="center">
+
+# 🐍 50 Essential Programs in Python - 50Qs of Py
+
+</div>
 
 <div align="center">
 
