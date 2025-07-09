@@ -1,7 +1,6 @@
 <div align="center">
 
 # 🐍 50 Essential Programs in Python - 50Qs of Py
-
 </div>
 
 <div align="center">
