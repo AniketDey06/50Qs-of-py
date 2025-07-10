@@ -38,13 +38,17 @@ cd 50Qs-of-py
 
 # Run any program
 python program_name.py
+
+# Run auto_readme.py (to up date the readme file)
+python script\auto_readme.py
+
 ```
 
 **Requirements:** Python 3.6+
 
 ---
 
-# 🐍 Python Questions
+## 🐍 Questions List
 
 ### 📁 01-10
 - [Q01.py](01-10/Q01.py)
@@ -61,6 +65,9 @@ python program_name.py
 ### 📁 11-20
 - [Q11.py](11-20/Q11.py)
 - [Q12.py](11-20/Q12.py)
+- [Q13.py](11-20/Q13.py)
+- [Q14.py](11-20/Q14.py)
+- [Q15.py](11-20/Q15.py)
 
 ---
 
@@ -108,4 +115,3 @@ MIT License - see [LICENSE](LICENSE) file for details
 **Made with ❤️ and 🐍 by [AniketDey](https://aniketdey.vercel.app)**
 
 </div>
-

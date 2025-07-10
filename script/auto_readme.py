@@ -2,7 +2,7 @@ import os
 import re
 
 README_FILE = "README.md"
-SECTION_HEADER = "# 🐍 Python Questions"
+SECTION_HEADER = "## 🐍 Questions List"
 
 def get_question_files_by_folder():
     grouped = {}
