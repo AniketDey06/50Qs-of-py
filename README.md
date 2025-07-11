@@ -68,6 +68,9 @@ python script\auto_readme.py
 - [Q13.py](11-20/Q13.py)
 - [Q14.py](11-20/Q14.py)
 - [Q15.py](11-20/Q15.py)
+- [Q16.py](11-20/Q16.py)
+- [Q17.py](11-20/Q17.py)
+- [Q18.py](11-20/Q18.py)
 
 ---
 
