@@ -23,5 +23,4 @@ print(f"\nSum of negative numbers is {sum_of_negs}")
 print(f"Sum of positive odd numbers is {sum_of_odds}")
 print(f"Sum of positive even numbers is {sum_of_eves}")
 
-
 # Code Compiled By - Aniket Dey
