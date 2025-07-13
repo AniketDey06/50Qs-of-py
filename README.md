@@ -79,6 +79,10 @@ python script\auto_readme.py
 - [Q24.py](21-30/Q24.py)
 - [Q25.py](21-30/Q25.py)
 - [Q26.py](21-30/Q26.py)
+- [Q27.py](21-30/Q27.py)
+- [Q28.py](21-30/Q28.py)
+- [Q29.py](21-30/Q29.py)
+- [Q30.py](21-30/Q30.py)
 
 ---
 
