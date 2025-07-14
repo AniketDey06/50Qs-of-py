@@ -84,6 +84,9 @@ python script\auto_readme.py
 - [Q29.py](21-30/Q29.py)
 - [Q30.py](21-30/Q30.py)
 
+### 📁 31-40
+- [Q31.py](31-40/Q31.py)
+
 ---
 
 ## 🌟 Features
