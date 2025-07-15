@@ -1,17 +1,14 @@
 # Write a java program to complete and display the sum of the following series.
-# 2-4+6-8+...........to n
+# S=1!+2!+3!+4!+........+n!
 
 num = int(input("Enter a number: "))
-count = 1
 sum = 0
 
-for i in range(2, num+1, 2):
-    if count%2 == 0:
-        sum -= i
-        count += 1
-    else:
-        sum += i
-        count += 1
+for i in range(1, num+1):
+    fact = 1
+    for j in range(1, i + 1):
+        fact *= j
+    sum += fact
 
 print(sum)
 
